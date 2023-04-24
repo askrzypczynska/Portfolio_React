@@ -1,0 +1,104 @@
+.SelectionWindow{
+    position: relative;
+	padding: 1rem;
+	min-width: 100vw;
+	height: 100vh;
+	text-align: center;
+    z-index: 0;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.SelectionWindow h1{
+    padding:0;
+    margin:0;
+    text-align:center;
+    font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.SelectionWindow span{
+    display: block;
+	text-align: center;
+    padding-top: 20px;
+	color: rgb(0, 0, 0);
+    width: 80%;
+    margin: 0 auto;
+	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+}
+
+.planet{
+    position: absolute;
+    margin: auto;
+    width: 15em;
+    height: 15em;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 2;
+    transition: filter 2s ease-out;
+}
+
+
+.planet p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 0 0 15px #000000;
+    z-index: 2;
+}
+
+.planet:hover{
+    filter: saturate(5);
+}
+
+.orbit{
+    position: absolute;
+    margin: auto;
+    border-radius: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 30em;
+    width: 30em;
+    animation: spin 15s infinite linear;
+    z-index: -1;
+}
+
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+.orbit img{
+    position: absolute;
+    height: 6.75em;
+    width: 6.75em;
+    top: -2.7em;
+    cursor: pointer;
+    transition: filter 2s ease-out;
+}
+
+.orbit p{
+    position: absolute;
+    top:-5px;
+    left: 263px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    text-shadow: 0 0 15px #000000;
+    z-index: 1;
+    font-size: 20px;
+    user-select: none;
+}
+
+.orbit img:hover{
+    filter: hue-rotate(50deg);
+}

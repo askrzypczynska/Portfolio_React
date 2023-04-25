@@ -1,6 +1,5 @@
 .SelectionWindow{
     position: relative;
-	padding: 1rem;
 	min-width: 100vw;
 	height: 100vh;
 	text-align: center;
@@ -12,8 +11,11 @@
 .SelectionWindow h1{
     padding:0;
     margin:0;
+    margin-top: 30px;
+    font-weight: 800;
     text-align:center;
-    font-size: calc(40px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size:calc(25px + 0.6vw);
+    text-shadow: 0px 0px 10px white;
 }
 
 .SelectionWindow span{
@@ -23,7 +25,9 @@
 	color: rgb(0, 0, 0);
     width: 80%;
     margin: 0 auto;
-	font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    font-size:calc(12px + 0.6vw);
+    text-shadow: 0px 0px 10px white;
+    font-weight: 400;
 }
 
 .planet{
@@ -37,7 +41,7 @@
     bottom: 0;
     cursor: pointer;
     z-index: 2;
-    transition: filter 2s ease-out;
+    transition: filter 1s ease-out;
 }
 
 
@@ -65,8 +69,8 @@
     right: 0;
     top: 0;
     bottom: 0;
-    height: 30em;
-    width: 30em;
+    height: 28em;
+    width: 28em;
     animation: spin 15s infinite linear;
     z-index: -1;
 }
@@ -84,21 +88,73 @@
     width: 6.75em;
     top: -2.7em;
     cursor: pointer;
-    transition: filter 2s ease-out;
 }
 
 .orbit p{
     position: absolute;
-    top:-5px;
-    left: 263px;
+    left: 243px;
     color: rgb(255, 255, 255);
     font-weight: 600;
     text-shadow: 0 0 15px #000000;
     z-index: 1;
     font-size: 20px;
     user-select: none;
+    animation: spin2 15s infinite linear;
 }
 
-.orbit img:hover{
+@keyframes spin2 {
+    100%{
+        transform: rotate(-360deg);
+    }
+    
+}
+
+.moon{
+    cursor: pointer;
+    transition: filter 1s ease-out;
+}
+
+.moon:hover{
     filter: hue-rotate(50deg);
+}
+
+.blob svg{
+    z-index: -3;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.blob2 svg{
+    z-index: -3;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .SelectionWindow span{
+        font-size: 19px;
+        text-shadow: 0px 0px 20px white ;
+        font-weight: 400;
+    }
+
+    .orbit {
+        animation: none;
+    }
+    .orbit img{
+        position: absolute;
+        height: 6.75em;
+        width: 6.75em;
+        top: 23.7em;
+        cursor: pointer;
+    }
+    .orbit p{
+        animation: none;
+
+        position: absolute;
+        top: 21.0em;
+
+    }
 }

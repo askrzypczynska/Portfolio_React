@@ -1,0 +1,35 @@
+.header{
+    margin: 20px;
+}
+
+.logoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80px;
+
+}
+
+.logoContainer img{
+    flex: 0 0 100%;
+    order: 0;
+    width: 80px;
+}
+
+.logoContainer h1, .logoContainer h2{
+    flex: 0 0 50%;
+    width: calc(100% - 80px);
+    vertical-align: middle;
+    justify-content:center;
+    padding-left: 10px;
+}
+
+.logoContainer h1{
+    font-weight: 800;
+    padding-top: 8px;
+}
+
+.logoContainer h2{
+    font-weight: 600;    
+    padding-top: 8px;
+}

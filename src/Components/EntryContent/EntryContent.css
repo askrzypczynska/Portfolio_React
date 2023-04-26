@@ -1,0 +1,151 @@
+.EntryContent
+{
+    display: block;
+    width: calc(46% - 1vw);
+    margin-left: calc(5% + 0.8vw);
+    margin-top: calc(8% + 2.8vw);
+    overflow: hidden;
+    pointer-events: auto;
+    margin-bottom: 10%;
+
+}
+
+.EntryContent h1
+{
+    font-size:calc(25px + 0.6vw);
+    font-weight: 600;
+}
+
+.EntryContent p
+{
+    font-weight: 100;
+    font-size:calc(15px + 0.6vw);
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.EntryContent a
+{
+    color: #6633CC;
+    font-size:calc(10px + 0.6vw);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    cursor: pointer;
+    transition: filter 1s ease-out;
+}
+
+.EntryContent a:hover
+{
+    filter: hue-rotate(50deg);
+}
+
+.EntryImage
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    transform-origin: top right;
+}
+
+@media (max-width: 480px) {
+    .EntryContent{
+        margin-top: 30%;
+        width: 90%
+    }
+    .EntryImage {
+        transform: scale(0.4);
+    }
+    .EntryContent h1{
+        width: 20%;
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .EntryContent{
+        margin-top: 40%;
+        width: 90%
+    }
+    .EntryImage {
+        transform: scale(0.5);
+    }
+    .EntryContent h1{
+        width: 40%;
+    }
+  }
+
+  /* @media (min-width: 767px) and (max-width: 1000px) {
+    .EntryContent{
+        margin-top: 25%;
+        width: 90%;
+        background-color: red;
+    }
+    .EntryImage {
+        transform: scale(0.5);
+    }
+    .EntryContent h1{
+        width: 40%;
+    }
+  } */
+
+  @media (max-width: 1024px) and (min-width: 769px){
+    .EntryImage {
+        transform: scale(0.6);
+    }
+  }
+
+  
+  @media (max-width: 1440px) and (min-width: 1025px){
+    .EntryImage {
+        transform: scale(0.8);
+    }
+  }
+
+.EntryContent img
+{
+    position: absolute;
+    width: 844px;
+    height: 568px;
+    right: 0;
+    top: 0;
+    z-index: 4;
+    animation: MoveUpDown 2.5s infinite  alternate;
+    cursor: pointer;
+    pointer-events: none;
+    transition: filter 1s ease-out;
+}
+
+
+@keyframes MoveUpDown 
+{
+    0% { transform: translateY(15px); }
+    100% { transform: translateY(-15px); }
+}
+
+.EntryImage p{
+    position: absolute;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+
+    top: 50px;
+    right: 585px;
+    z-index: 5;
+    animation: MoveUpDown 2.5s infinite  alternate;
+}
+
+#ladyAreaClick{
+    position: absolute;
+    top: 150px;
+    left: 27px;
+    z-index: 10;
+    animation: MoveUpDown 2.5s infinite  alternate;
+    
+}
+
+#ladyAreaClick path{
+    cursor: pointer;
+}
+

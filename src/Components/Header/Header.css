@@ -1,40 +1,48 @@
-.header{
-    margin: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform-origin: top left;
-    scale: 0.5;
-}
-
 .logoContainer{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 80px;
-
+    padding: 2vw;
 }
 
 .logoContainer img{
-    flex: 0 0 100%;
-    order: 0;
-    width: 80px;
-}
-
-.logoContainer h1, .logoContainer h2{
-    flex: 0 0 50%;
-    width: calc(100% - 80px);
-    vertical-align: middle;
-    justify-content:center;
-    padding-left: 10px;
+    float: left;
+    width: 4vw;
+    height: auto;
 }
 
 .logoContainer h1{
-    font-weight: 800;
-    padding-top: 8px;
+    font-size: 1.5vw;
+    margin-left: 4.5vw;
+    margin-top: 0.6vw;
+    margin-bottom: 0;
 }
 
 .logoContainer h2{
-    font-weight: 600;    
-    padding-top: 8px;
+    font-size: 1.5vw;
+    margin-left: 4.5vw;;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.5vw;
+}
+
+.logoContainerEnd{
+    clear: both;
+}
+
+@media only screen and (max-width: 768px) {
+    .logoContainer img{
+        width: 6vw;
+    }
+    
+    .logoContainer h1{
+        font-size: 2vw;
+        margin-left: 5vw;
+        margin-top: 1vw;
+    }
+    
+    .logoContainer h2{
+        font-size: 2vw;
+        margin-left: 5vw;;
+        font-weight: 400;
+        line-height: 2vw;
+    }
+
 }

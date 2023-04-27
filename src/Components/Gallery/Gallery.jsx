@@ -4,7 +4,10 @@ import "./Gallery.css"
 function Gallery(){
     return(
         <div className="Gallery">
-            Dzień dobry galeria
+            <div className="GalleryWork">
+                <div className="GalleryWorkImg">
+                </div>
+            </div>
         </div>
     )
 }

@@ -10,6 +10,7 @@ function Header() {
                 <img src={logoHeader} />
                 <h1>Skrzypczyńska</h1>
                 <h2>Aleksandra</h2>
+                <div className='logoContainerEnd'></div>
 		    </div>
         </div>
     )

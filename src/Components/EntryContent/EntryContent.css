@@ -1,9 +1,9 @@
 .EntryContent
 {
     display: block;
-    width: calc(46% - 1vw);
-    margin-left: calc(5% + 0.8vw);
-    margin-top: calc(8% + 2.8vw);
+    width: calc(44% - 1vw);
+    margin-left: calc(8% + 0.8vw);
+    margin-top: calc(5% + 2.8vw);
     overflow: hidden;
     pointer-events: auto;
     margin-bottom: 10%;
@@ -49,59 +49,6 @@
     z-index: 2;
     transform-origin: top right;
 }
-
-@media (max-width: 480px) {
-    .EntryContent{
-        margin-top: 30%;
-        width: 90%
-    }
-    .EntryImage {
-        transform: scale(0.4);
-    }
-    .EntryContent h1{
-        width: 20%;
-    }
-}
-
-@media (max-width: 768px) and (min-width: 481px) {
-    .EntryContent{
-        margin-top: 40%;
-        width: 90%
-    }
-    .EntryImage {
-        transform: scale(0.5);
-    }
-    .EntryContent h1{
-        width: 40%;
-    }
-  }
-
-  /* @media (min-width: 767px) and (max-width: 1000px) {
-    .EntryContent{
-        margin-top: 25%;
-        width: 90%;
-        background-color: red;
-    }
-    .EntryImage {
-        transform: scale(0.5);
-    }
-    .EntryContent h1{
-        width: 40%;
-    }
-  } */
-
-  @media (max-width: 1024px) and (min-width: 769px){
-    .EntryImage {
-        transform: scale(0.6);
-    }
-  }
-
-  
-  @media (max-width: 1440px) and (min-width: 1025px){
-    .EntryImage {
-        transform: scale(0.8);
-    }
-  }
 
 .EntryContent img
 {
@@ -149,3 +96,29 @@
     cursor: pointer;
 }
 
+
+  @media (max-width: 1024px) and (min-width: 769px){
+    .EntryImage {
+        transform: scale(0.5);
+    }
+  }
+
+  
+  @media (max-width: 1440px) and (min-width: 1025px){
+    .EntryImage {
+        transform: scale(0.7);
+    }
+  }
+
+@media only screen and (max-width: 768px) {
+    .EntryContent{
+        margin-top: 25%;
+        width: 90%
+    }
+    .EntryImage {
+        transform: scale(0.45);
+    }
+    .EntryContent h1{
+        width: 40%;
+    }
+}

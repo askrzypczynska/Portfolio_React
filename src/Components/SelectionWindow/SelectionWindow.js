@@ -14,12 +14,12 @@ function SelectionWindow() {
             <div className='contentGalactic'>
                 <div className='planet'>
                     <p>IT</p>
-                    <img src={planetIt} />
+                    <img src={planetIt} alt="Blue planet"/>
                 </div>
                 <div className='orbit'>
                     <div className='moon'>
                         <p>Grafika</p>
-                        <img src={planetGraph} />
+                        <img src={planetGraph} alt="Violet small moon"/>
                     </div>
                 </div>
             </div>

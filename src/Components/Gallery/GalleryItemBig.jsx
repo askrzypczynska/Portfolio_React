@@ -1,12 +1,25 @@
 import React from "react";
 import "./Gallery.css"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronLeft, faChevronRight, faXmark} from '@fortawesome/free-solid-svg-icons'
 
+function GalleryItemBig(props){
+    const handleCloseModal = props.onClose;
+    const prevSlide = props.prevBtn;
+    const nextSlide = props.nextBtn;
 
-function GalleryItemBig(){
+    const galleryGraphImages = props.galleryGraphImages;
+    
+
     return(
         <div className="GalleryItemBig">
-            <img />
-            <p>Opis</p>
+            <div className="GalleryItemBigBox">
+                <FontAwesomeIcon icon={faXmark} className="btnClose" onClick={handleCloseModal}/>
+                <FontAwesomeIcon icon={faChevronLeft} className="btnPrev" onClick={prevSlide}/>
+                <FontAwesomeIcon icon={faChevronRight} className="btnNext" onClick={nextSlide}/>
+                <img src={props.img} alt="" />
+                <p>{props.description}</p>
+            </div>
         </div>
     )
 }

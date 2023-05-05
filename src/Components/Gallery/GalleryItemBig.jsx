@@ -17,7 +17,10 @@ function GalleryItemBig(props){
                 <FontAwesomeIcon icon={faXmark} className="btnClose" onClick={handleCloseModal}/>
                 <FontAwesomeIcon icon={faChevronLeft} className="btnPrev" onClick={prevSlide}/>
                 <FontAwesomeIcon icon={faChevronRight} className="btnNext" onClick={nextSlide}/>
-                <img src={props.img} alt="" />
+                <div className="imgBorder">
+                    <img src={props.img} alt="" />
+                </div>
+                
                 <p>{props.description}</p>
             </div>
         </div>

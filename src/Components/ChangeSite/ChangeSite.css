@@ -1,0 +1,30 @@
+.ChangeSite {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 30px #4e0fa0;
+    text-align: center;
+
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  .ChangeSite:hover {
+    background-color: #3e4477;
+    animation: none;
+  }
+
+@keyframes changeColor {
+
+    0%   {background-color: #7236c1;}
+    25%  {background-color: #407fd0;}
+    50% {background-color: #233899;}
+    100%   {background-color: #7236c1;}
+}

@@ -3,7 +3,8 @@ import planetIt from '../../img/planetIT.png';
 import planetGraph from '../../img/planetGraph.png';
 import React from 'react';
 
-function SelectionWindow() {
+function SelectionWindow(params) {
+
 
     return (
         <div className='SelectionWindow'>
@@ -12,12 +13,12 @@ function SelectionWindow() {
                 Jako grafik i programista, przygotowałam dla Ciebie dwie odrębne sekcje portfolio, które reprezentują moje projekty z obu dziedzin. Jestem przekonana, że moje portfolio przyciągnie Waszą uwagę i zainspiruje do dalszej współpracy.
             </span>
             <div className='contentGalactic'>
-                <div className='planet'>
+                <div className='planet' onClick={params.changeSiteIt}>
                     <p>IT</p>
                     <img src={planetIt} alt="Blue planet"/>
                 </div>
                 <div className='orbit'>
-                    <div className='moon'>
+                    <div className='moon' onClick={params.changeSiteGraphic}>
                         <p>Grafika</p>
                         <img src={planetGraph} alt="Violet small moon"/>
                     </div>

@@ -5,7 +5,7 @@ import './Skills.css';
 function Skills() {
 
     return (
-        <div className='Skills'>
+        <div className='Skills' id="Skills">
             <div className='SkillsImg'>
                 <img src={myFoto} />
             </div>

@@ -1,11 +1,12 @@
 import './ChangeSite.css';
 import React from 'react';
 
-function ChangeSite() {
+function ChangeSite(params) {
 
     return (
-        <div className='ChangeSite'>
-            🚀 <br/> Kliknij mnie <br/>aby przejść <br/>do portfolio IT
+        <div className='ChangeSite' onClick={params.changeSiteGraphic}>
+            🚀 <br/> Kliknij mnie <br/>aby przejść <br/>do {}
+            portfolio IT
         </div>
     )
 }

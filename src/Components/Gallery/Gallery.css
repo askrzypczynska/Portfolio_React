@@ -15,11 +15,19 @@
 
 }
 
-.Gallery .single img{
+.singleImg{
     display: block;
     margin: 0;
     width: 100%;
     filter: opacity(0.7) drop-shadow(0px 0px 1px #6800c8);
+    cursor: pointer;
+}
+
+.singleImgIt{
+    display: block;
+    margin: 0;
+    width: 100%;
+    filter: opacity(0.8) drop-shadow(0px 0px 1px #0044ff);
     cursor: pointer;
 }
 
@@ -63,7 +71,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    z-index: 2;
+    z-index: 4;
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.8);

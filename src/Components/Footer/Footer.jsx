@@ -2,10 +2,10 @@ import './Footer.css';
 import React from 'react';
 import CVFile from '../../img/CV_SkrzypczynskaAleksandra.pdf'
 
-function Footer() {
+function Footer(params) {
 
     return (
-        <div className='Footer'>
+        <div className={params.footerColor} id="FooterMain">
             <h3>Zapraszam do kontaktu</h3>
             <div className='footerContact'>
                 <ul>E-MAIL:

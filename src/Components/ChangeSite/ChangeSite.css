@@ -1,30 +1,82 @@
 .ChangeSite {
     position: fixed;
-    bottom: 20px;
+    right: 0;
     right: 20px;
-    z-index: 4;
-    color: white;
+    z-index: 3;
+    color: black;
     padding: 10px 20px;
+    border: 1px solid black;
     border-radius: 5px;
     font-size: 1.2rem;
     cursor: pointer;
-    box-shadow: 0px 0px 30px #4e0fa0;
+    box-shadow: 0px 0px 30px #000000;
     text-align: center;
+    background-color: white;
+    transform-origin: bottom right ;
 
-    animation-name: changeColor;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
+    animation: 3s linear 0s infinite alternate changeSize;
   }
   
   .ChangeSite:hover {
     background-color: #3e4477;
+    color: white;
     animation: none;
   }
 
-@keyframes changeColor {
+@keyframes changeSize {
 
-    0%   {background-color: #7236c1;}
-    25%  {background-color: #407fd0;}
-    50% {background-color: #233899;}
-    100%   {background-color: #7236c1;}
+  0%   {    scale: 1;}
+  25%  {    scale: 1.05;}
+  50% {    scale: 1.1;}
+  75% {    scale: 1.05;}
+  100%   {    scale: 1;}
+} 
+
+@media (max-width: 1529px) and (min-width: 1301px)
+{
+  .ChangeSite{
+    scale: 0.9;
+    animation: 3s linear 0s infinite alternate changeSize2;
+  }
+  @keyframes changeSize2 {
+
+    0%   {    scale: 0.9;}
+    25%  {    scale: 0.95;}
+    50% {    scale: 1;}
+    75% {    scale: 0.95;}
+    100%   {    scale: 0.9;}
+  } 
+}
+
+@media (max-width: 1200px) and (min-width: 1025px)
+{
+  .ChangeSite{
+    scale: 0.8;
+    animation: 3s linear 0s infinite alternate changeSize3;
+  }
+  @keyframes changeSize3 {
+
+    0%   {    scale: 0.8;}
+    25%  {    scale: 0.85;}
+    50% {    scale: 0.9;}
+    75% {    scale: 0.85;}
+    100%   {    scale: 0.8;}
+  } 
+}
+
+
+@media (max-width: 1024px)
+{
+  .ChangeSite{
+    scale: 0.6;
+    animation: 3s linear 0s infinite alternate changeSize4;
+  }
+  @keyframes changeSize4 {
+
+    0%   {    scale: 0.6;}
+    25%  {    scale: 0.65;}
+    50% {    scale: 0.7;}
+    75% {    scale: 0.65;}
+    100%   {    scale: 0.6;}
+  } 
 }

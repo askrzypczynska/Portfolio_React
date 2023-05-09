@@ -2,14 +2,14 @@ import React from "react";
 import './EntryContent.css';
 import ladyCharacter from '../../img/ladyCharacter.png';
 
-function EntryContent() {
+function EntryContent(params) {
     return(
         <div className="EntryContent">
             <h1>Hej, mam na imię Ola</h1>
-            <p>ukończyłam studia na kierunku Architektura Wnętrz, jednak moją pasją jest grafika komputerowa, którą od dawna zajmuję się hobbystycznie, a od ponad roku – również komercyjnie.</p>
+            <p>{params.entryContentText}</p>
             <a href="#Skills">PRZEWIŃ NA DÓŁ, SPRAWDŹ MOJE UMIEJĘTNOŚCI</a>
             <div className="EntryImage">
-                <svg viewBox="0 0 843 606" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="844px" height="606px" preserveAspectRatio='xMinYMin meet' id="blobSvg"><image x="0" y="0" width="843px" height="606px" clipPath="url(#shape)" href="https://i.imgur.com/ljdKiW8.png" preserveAspectRatio="none"></image>	
+                <svg viewBox="0 0 843 606" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="844px" height="606px" preserveAspectRatio='xMinYMin meet' id="blobSvg"><image x="0" y="0" width="843px" height="606px" clipPath="url(#shape)" href={params.backgroundImage} preserveAspectRatio="none"></image>	
                     <clipPath id="shape">
                     <path fill="url(#gradient)">
                         <animate attributeName="d"

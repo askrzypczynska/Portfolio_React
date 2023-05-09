@@ -34,11 +34,11 @@ class App extends Component {
         <div className='App'>
           <div className="ItSection">
             <Header />
-            <ChangeSite changeSiteGraphic={this.ChangeSiteGraphic}/>
-            <EntryContent />
-            <Gallery />
-            <Skills />
-            <Footer />
+            <ChangeSite changeSiteGraphic={this.ChangeSiteGraphic} buttonText={ItContent.buttonText}/>
+            <EntryContent entryContentText={ItContent.entryContentText} backgroundImage={ItContent.backgroundImage}/>
+            <Gallery windowSelection={2}/>
+            <Skills imgSkills={ItContent.imgSkills} skillsText={ItContent.skillsText}/>
+            <Footer footerColor={ItContent.footerColor}/>
           </div>
         </div>
       )
@@ -47,11 +47,11 @@ class App extends Component {
       <div className='App'>
         <div className="GraphicSection">
           <Header />
-          <ChangeSite changeSiteIt={this.ChangeSiteIt}/>
-          <EntryContent />
-          <Gallery />
-          <Skills />
-          <Footer />
+          <ChangeSite changeSiteIt={this.ChangeSiteIt} buttonText={GraphicContent.buttonText}/>
+          <EntryContent entryContentText={GraphicContent.entryContentText} backgroundImage={GraphicContent.backgroundImage}/>
+          <Gallery windowSelection={3}/>
+          <Skills imgSkills={GraphicContent.imgSkills} skillsText={GraphicContent.skillsText}/>
+          <Footer footerColor={GraphicContent.footerColor}/>
         </div>
       </div>
     );
@@ -60,11 +60,9 @@ class App extends Component {
 
   ChangeSiteIt() {
     this.setState({windowSelection: 2})
-    console.log('it');
   }
   ChangeSiteGraphic() {
     this.setState({windowSelection: 3})
-    console.log('grap');
   }
 
 }

@@ -8,9 +8,6 @@ function GalleryItemBig(props){
     const prevSlide = props.prevBtn;
     const nextSlide = props.nextBtn;
 
-    const galleryGraphImages = props.galleryGraphImages;
-    
-
     return(
         <div className="GalleryItemBig">
             <div className="GalleryItemBigBox">

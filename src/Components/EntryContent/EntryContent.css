@@ -96,26 +96,40 @@
 }
 
 
-  @media (max-width: 1024px) and (min-width: 769px){
-    .EntryImage {
-        transform: scale(0.5);
-    }
-  }
-
   
-  @media (max-width: 1440px) and (min-width: 1025px){
+@media (max-width: 1440px) and (min-width: 1025px){
     .EntryImage {
         transform: scale(0.7);
     }
-  }
+}
 
-@media only screen and (max-width: 768px) {
+@media (max-width: 1024px) and (min-width: 769px){
+    .EntryImage {
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width: 768px) and (min-width: 481px){
     .EntryContent{
         margin-top: 25%;
         width: 90%
     }
     .EntryImage {
         transform: scale(0.45);
+    }
+    .EntryContent h1{
+        width: 40%;
+    }
+}
+
+@media (max-width: 480px) 
+{
+    .EntryContent{
+        margin-top: 25%;
+        width: 90%
+    }
+    .EntryImage {
+        transform: scale(0.3);
     }
     .EntryContent h1{
         width: 40%;

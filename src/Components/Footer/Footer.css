@@ -1,4 +1,4 @@
-.Footer{
+.Footer {
     background: rgb(120,52,198);
     background: linear-gradient(115deg, rgba(120,52,198,1) 0%, rgba(55,107,194,0.9051821412158614) 100%); 
     text-align: center;
@@ -9,16 +9,27 @@
     padding-bottom: 20px;
 }
 
-.Footer a{
+.Footer2{
+    background: #2e61bc;
+    background: linear-gradient(115deg, #2e61bc 0%, #092393 100%); 
+    text-align: center;
+    margin-bottom: 0;
+    color: white;
+    font-size:calc(8px + 0.6vw);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#FooterMain a{
     text-decoration: none;
     color: #ffffff;
 }
 
-.Footer a:hover{
+#FooterMain a:hover{
     color: #e67fc2;
 }
 
-.Footer h3{
+#FooterMain h3{
     text-align: center;
     margin-bottom: 10px;
 }
@@ -28,22 +39,22 @@
     flex-wrap: wrap;
   }
   
-.Footer ul{
+  #FooterMain ul{
     flex-basis: 25%;
 }
 
-.Footer ul:last-child text {
+#FooterMain ul:last-child text {
     cursor: pointer;
     text-decoration: none;
 }
 
-.Footer li{
+#FooterMain li{
     list-style: none;
     font-weight: 200;
     text-decoration: none;
 }
 
-.Footer li::target-text{
+#FooterMain li::target-text{
     cursor: pointer;
 }
 
@@ -53,7 +64,7 @@
         font-size:calc(10px + 0.6vw);
     }
 
-    .Footer ul{
+    #FooterMain ul{
         flex-basis: 50%;
         margin-bottom: 20px;
     }

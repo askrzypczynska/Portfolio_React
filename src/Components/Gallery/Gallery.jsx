@@ -1,4 +1,5 @@
 import galleryGraphImages from "./urls"
+import galleryItImages from "./urlsIt"
 import React, { useState } from "react";
 import "./Gallery.css"
 import GalleryItemBig from "./GalleryItemBig";

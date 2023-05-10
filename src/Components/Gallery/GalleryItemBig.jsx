@@ -17,8 +17,7 @@ function GalleryItemBig(props){
                 <div className="imgBorder">
                     <img src={props.img} alt="" />
                 </div>
-                
-                <p>{props.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: props.description}}></p>
             </div>
         </div>
     )

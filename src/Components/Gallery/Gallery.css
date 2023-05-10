@@ -113,6 +113,10 @@
     font-size: 20px;
   }
 
+  .GalleryItemBigBox a{
+    color: white;
+  }
+
 
 .GalleryItemBigBox .btnClose, .GalleryItemBigBox .btnPrev, .GalleryItemBigBox .btnNext{
     position: fixed;

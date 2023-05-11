@@ -6,6 +6,7 @@ import GalleryItemBig from "./GalleryItemBig";
 
 function Gallery(props){
 
+    const [isLoading, setIsLoading] = useState(true);
     const [sildeIndex, setSlideIndex] = useState(null);
     const [openModal, setOpenModal] = useState(false)
 
@@ -15,11 +16,13 @@ function Gallery(props){
     }
 
     const handleCloseModal = () => {
+        setIsLoading(true)
         setSlideIndex(null)
         setOpenModal(false)
     }
 
     const prevSlide = () => {
+        setIsLoading(true)
         if(props.windowSelection === 2){
             sildeIndex === 0 ? setSlideIndex( galleryItImages.length - 1) : setSlideIndex( sildeIndex - 1)
         } else{
@@ -27,6 +30,7 @@ function Gallery(props){
         }
     }
     const nextSlide = () => {
+        setIsLoading(true)
         if(props.windowSelection === 2){
             sildeIndex + 1 === galleryItImages.length ? setSlideIndex(0) : setSlideIndex(sildeIndex + 1)
         } else{
@@ -46,6 +50,8 @@ function Gallery(props){
                         onClose={handleCloseModal}
                         prevBtn={prevSlide}
                         nextBtn={nextSlide}
+                        setIsLoading={setIsLoading}
+                        isLoading={isLoading}
                     />
                 )}
     
@@ -74,6 +80,8 @@ function Gallery(props){
                         onClose={handleCloseModal}
                         prevBtn={prevSlide}
                         nextBtn={nextSlide}
+                        setIsLoading={setIsLoading}
+                        isLoading={isLoading}
                     />
                 )}
     

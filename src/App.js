@@ -8,18 +8,28 @@ import Skills from './Components/Skills/Skills';
 import Footer from './Components/Footer/Footer';
 import ChangeSite from './Components/ChangeSite/ChangeSite';
 import {GraphicContent, ItContent} from './Components/ContentVariants/ContentVariants'
+import Loader from './Components/Loader/Loader';
 
 class App extends Component {
 
   constructor(){
     super();
     this.state = {
-      windowSelection: 1
+      windowSelection: 1,
+      isLoading: true,
     }
+
+
 
     this.ChangeSiteIt = this.ChangeSiteIt.bind(this)
     this.ChangeSiteGraphic = this.ChangeSiteGraphic.bind(this)
   }
+
+  componentDidMount() {
+    let tmp = this.state;
+    tmp.isLoading = false;
+    this.setState(tmp);
+  };
 
   render() {
 
@@ -33,6 +43,7 @@ class App extends Component {
       return (
         <div className='App'>
           <div className="ItSection">
+            <Loader isLoading={this.state.isLoading}/>
             <Header />
             <ChangeSite changeSiteGraphic={this.ChangeSiteGraphic} buttonText={ItContent.buttonText}/>
             <EntryContent entryContentText={ItContent.entryContentText} backgroundImage={ItContent.backgroundImage}/>
@@ -46,6 +57,7 @@ class App extends Component {
     return (
       <div className='App'>
         <div className="GraphicSection">
+          <Loader isLoading={this.state.isLoading}/>
           <Header />
           <ChangeSite changeSiteIt={this.ChangeSiteIt} buttonText={GraphicContent.buttonText}/>
           <EntryContent entryContentText={GraphicContent.entryContentText} backgroundImage={GraphicContent.backgroundImage}/>
@@ -59,10 +71,28 @@ class App extends Component {
   }
 
   ChangeSiteIt() {
-    this.setState({windowSelection: 2})
+    let tmp = this.state;
+    tmp.windowSelection = 2;
+    tmp.isLoading = true;
+    this.setState(tmp)
+
+    setTimeout(() => {
+      let tmp = this.state;
+      tmp.isLoading = false;
+      this.setState(tmp);
+    }, 1500);
   }
   ChangeSiteGraphic() {
-    this.setState({windowSelection: 3})
+    let tmp = this.state;
+    tmp.windowSelection = 3;
+    tmp.isLoading = true;
+    this.setState(tmp)
+
+    setTimeout(() => {
+      let tmp = this.state;
+      tmp.isLoading = false;
+      this.setState(tmp);
+    }, 1500);
   }
 
 }

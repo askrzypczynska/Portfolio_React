@@ -1,8 +1,7 @@
 import './Loader.css';
-import React, {useEffect, useState} from 'react';
+import React from 'react';
 
 function Loader(props) {
-    const [loading, setLoading] = useState(true);
     let isLoading = props.isLoading;
 
     if(isLoading === true){

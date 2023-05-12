@@ -1,14 +1,12 @@
 import React from 'react';
 import './Skills.css';
-import myFoto from '../../img/myCharacter.png'
-import myFoto2 from '../../img/myCharacter2.png'
 
 function Skills(params) {
 
     return (
         <div className='Skills' id="Skills">
             <div className='SkillsImg'>
-                <img src={params.imgSkills} />
+                <img src={params.imgSkills} alt="Boat with girl and fish" />
             </div>
             <div className='SkillsText'>
                 <h1>Moje umiejętności:</h1>

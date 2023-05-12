@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className='header'>
             <div className="logoContainer">
-                <img src={logoHeader} />
+                <img src={logoHeader} alt="Site logo: violet origami"/>
                 <h1>Skrzypczyńska</h1>
                 <h2>Aleksandra</h2>
                 <div className='logoContainerEnd'></div>

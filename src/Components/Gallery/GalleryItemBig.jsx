@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Gallery.css"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight, faXmark} from '@fortawesome/free-solid-svg-icons'
@@ -17,7 +17,7 @@ function GalleryItemBig(props){
                 <FontAwesomeIcon icon={faChevronRight} className="btnNext" onClick={nextSlide}/>
                 <div className="imgBorder">
                     {props.isLoading && <Loader isLoading={true}/>}
-                    <img src={props.img} alt="" onLoad={() => props.setIsLoading(false)}/>
+                    <img src={props.img} alt="Portfolio works" onLoad={() => props.setIsLoading(false)}/>
                 </div>
                 <p dangerouslySetInnerHTML={{ __html: props.description}}></p>
             </div>

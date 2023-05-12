@@ -23,7 +23,7 @@ function EntryContent(params) {
                         "></animate>
                     </path></clipPath>
                 </svg>
-			    <img src={ladyCharacter} />
+			    <img src={ladyCharacter} alt="Floating unicorn"/>
 
                 <svg viewBox="0 0 807 412" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="807px" height="412px"  id="ladyAreaClick">
                     <path 

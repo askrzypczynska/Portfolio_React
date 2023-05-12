@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/Portfolio_React/static/css/main.19a5a260.css",
+    "main.js": "/Portfolio_React/static/js/main.88709fd6.js",
+    "static/js/787.f6e65957.chunk.js": "/Portfolio_React/static/js/787.f6e65957.chunk.js",
+    "static/media/2.png": "/Portfolio_React/static/media/2.348106d1712e66ef737a.png",
+    "static/media/1.png": "/Portfolio_React/static/media/1.7f6385be962fce80405f.png",
+    "static/media/CV_SkrzypczynskaAleksandra.pdf": "/Portfolio_React/static/media/CV_SkrzypczynskaAleksandra.96a467d282684cb5010d.pdf",
+    "static/media/myCharacter.png": "/Portfolio_React/static/media/myCharacter.d9c3fc0e1dbed0be3cec.png",
+    "static/media/CerebriSansPro-Thin.ttf": "/Portfolio_React/static/media/CerebriSansPro-Thin.c94edaf3ddcbbe291f27.ttf",
+    "static/media/CerebriSansPro-Regular.ttf": "/Portfolio_React/static/media/CerebriSansPro-Regular.03aa704285d363c2e175.ttf",
+    "static/media/CerebriSansPro-SemiBold.ttf": "/Portfolio_React/static/media/CerebriSansPro-SemiBold.9a203f15a965f3ef593a.ttf",
+    "static/media/CerebriSansPro-ExtraBold.ttf": "/Portfolio_React/static/media/CerebriSansPro-ExtraBold.915e774f2e9f1412cd06.ttf",
+    "static/media/myCharacter2.png": "/Portfolio_React/static/media/myCharacter2.514b0536942a2f119f0d.png",
+    "static/media/ladyCharacter.png": "/Portfolio_React/static/media/ladyCharacter.93ae775c630ae7d7be0c.png",
+    "static/media/planetIT.png": "/Portfolio_React/static/media/planetIT.bf02c5f62ed286c05f5e.png",
+    "index.html": "/Portfolio_React/index.html",
+    "main.19a5a260.css.map": "/Portfolio_React/static/css/main.19a5a260.css.map",
+    "main.88709fd6.js.map": "/Portfolio_React/static/js/main.88709fd6.js.map",
+    "787.f6e65957.chunk.js.map": "/Portfolio_React/static/js/787.f6e65957.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19a5a260.css",
+    "static/js/main.88709fd6.js"
+  ]
+}

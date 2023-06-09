@@ -18,6 +18,10 @@ import It9 from "../../img/Miniature/IT/9.png"
 import It9Max from "../../img/Works/IT/9.png"
 import It10 from "../../img/Miniature/IT/10.png"
 import It10Max from "../../img/Works/IT/10.png"
+import It11 from "../../img/Miniature/IT/11.png"
+import It11Max from "../../img/Works/IT/11.png"
+import It12 from "../../img/Miniature/IT/12.png"
+import It12Max from "../../img/Works/IT/12.png"
 
 // -------------------- Galery IT -------------------- //
 
@@ -53,9 +57,19 @@ const galleryItImages = [
         imgDestcription: 'Roczna współpraca z firmą Riot Games, tworzenie stron wydarzeniowych na forum gry.(Strona została wygaszona w 2020 roku)'
     },
     {
+        imgMin: It11,
+        imgMax: It11Max,
+        imgDestcription: 'Aplikacja do wyszukiwania komiksów, ich opisów i okładek. Stworzona w react.js przy pomocy "Unoffical Comic Books API" <a href="https://github.com/askrzypczynska/ComixBox_website" target="blank">Link do repozytorium.</a>'
+    },
+    {
+        imgMin: It12,
+        imgMax: It12Max,
+        imgDestcription: 'Strona zawierająca formularz zgłoszeniowy do konkursu literackiego. Stworzona w celu nauki PHP, oraz MySGL. <a href="https://github.com/askrzypczynska/CompetitionForm-PHP" target="blank">Link do repozytorium.</a>'
+    },
+    {
         imgMin: It8,
         imgMax: It8Max,
-        imgDestcription: 'Strona zawierająca formularz zgłoszeniowy do konkursu literackiego. Stworzona w celu nauki PHP, oraz MySGL. <a href="https://github.com/askrzypczynska/CompetitionForm-PHP" target="blank">Link do repozytorium.</a>'
+        imgDestcription: 'Strona umożliwiająca zarejestrowanie i zalogowanie. Do obsługi strony zostało wykorzystane własne Api postawione w Node.js. <a href="https://github.com/askrzypczynska/Web_authentication_app" target="blank">Link do repozytorium.</a>'
     },
     {
         imgMin: It2,
